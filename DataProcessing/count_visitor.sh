@@ -1,3 +1,5 @@
+#doitlive speed: 3
+
 cd ./data/data_processing/
 cat *id*.txt | more
 cat *id*0.txt | sort |  more

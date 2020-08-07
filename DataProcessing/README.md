@@ -28,6 +28,15 @@ Please Install Tool as below
 <pre><code>
 brew install jq
 npm install -g gnomon
+pip3 install termgraph
+pip install doitlive
 </code>
 </pre>
 
+Demo as below
+
+<coode>
+<pre>
+
+</pre>
+</coode>
