@@ -1,4 +1,4 @@
-# Taiwan AIAcademy Learning Notebook 
+# Kent's Machine Learning and Data Processing Learning Notebook 
 
 這些是我在第一屆台灣人工智慧學校上課過程中所學到，並將比較重要的部份摘錄在以下的 Notebook 之中供大家參考，及當作自已的學習筆記
 （備註:除了人工智慧學校所學之外，後來自行追加了不同學習教材來源）
@@ -24,6 +24,7 @@
   * [Cosine Similarity vs Euclidean Distance](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/CosineSimVsEuclidean.ipynb)
   * [Clustering_GaussianMixture](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/Clustering_GaussianMixture.ipynb)
   * [PCA](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/PCAandAutoencoders.ipynb)
+  * [Woe]
   
  * Machine Learning Kaggle and Tutorial Project
    * House Pricing Prediction
@@ -31,3 +32,6 @@
      * [Pricing Prediction](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Exercise/House-v3.ipynb)
      
    * [Find Contact Information Duplicate](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Exercise/find_duplicate/20191014kent.ipynb)
+
+* Using Linux Shell to Process Data
+  * 
