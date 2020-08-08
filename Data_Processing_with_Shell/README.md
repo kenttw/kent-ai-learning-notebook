@@ -36,3 +36,5 @@ pip install doitlive
 Demo as below
 
 [![asciicast](https://asciinema.org/a/e9L7XVn11fX7ZUVXAfoIywKjU.svg)](https://asciinema.org/a/e9L7XVn11fX7ZUVXAfoIywKjU)
+
+[![asciicast](https://asciinema.org/a/0hsMhLPopjHIj5RdGCYUPyBsf.svg)](https://asciinema.org/a/0hsMhLPopjHIj5RdGCYUPyBsf)
