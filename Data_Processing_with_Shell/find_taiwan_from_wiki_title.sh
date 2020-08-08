@@ -1,5 +1,5 @@
 #doitlive speed: 3
-cd /Users/kent/git/aiacademy-learning-notebook/DataProcessing/data/data_processing
+cd /Users/kent/git/kent-ai-learning-notebook/Data_Processing_with_Shell/data/data_processing
 ls -alh titl*
 cat title000000000000.json | more
 find title* | xargs cat | wc -l
