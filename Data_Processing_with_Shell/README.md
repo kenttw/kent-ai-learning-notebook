@@ -37,11 +37,28 @@ pip install doitlive
 
 ## Demo as below
 
+<pre>
 <code>
 doitlive play find_taiwan_from_wiki_title.sh
 </code>
+</pre>
+
 [![asciicast](https://asciinema.org/a/e9L7XVn11fX7ZUVXAfoIywKjU.svg)](https://asciinema.org/a/e9L7XVn11fX7ZUVXAfoIywKjU)
 
+<pre>
+<code>
+doitlive play sort_awk.sh
+</code>
+</pre>
+
+
 [![asciicast](https://asciinema.org/a/0hsMhLPopjHIj5RdGCYUPyBsf.svg)](https://asciinema.org/a/0hsMhLPopjHIj5RdGCYUPyBsf)
+
+
+<pre>
+<code>
+doitlive play demojq.sh
+</code>
+</pre>
 
 [![asciicast](https://asciinema.org/a/9F7n89RawNW83d1sCb8mG31AR.svg)](https://asciinema.org/a/9F7n89RawNW83d1sCb8mG31AR)
