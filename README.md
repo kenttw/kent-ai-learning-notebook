@@ -24,7 +24,7 @@
   * [Cosine Similarity vs Euclidean Distance](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/CosineSimVsEuclidean.ipynb)
   * [Clustering_GaussianMixture](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/Clustering_GaussianMixture.ipynb)
   * [PCA](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/PCAandAutoencoders.ipynb)
-  * [Woe]
+  * [Woe](https://github.com/kenttw/kent-ai-learning-notebook/blob/744fba61f1443b6bb49b054dc65232ea0376fdc2/Machine_Learning_Basic/Woe.ipynb)
   
  * Machine Learning Kaggle and Tutorial Project
    * House Pricing Prediction
