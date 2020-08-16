@@ -34,5 +34,5 @@
    * [Find Contact Information Duplicate](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Exercise/find_duplicate/20191014kent.ipynb)
    * [GCN Graph Convolution Network](https://github.com/kenttw/kent-ai-learning-notebook/blob/8f6ec722e1a137a0f69f501c7d0b4a95d53573c2/Machine_Learning_Exercise/GCN.ipynb)
 * Using Linux Shell to Process Data
-　* [Slide](https://docs.google.com/presentation/d/1CL_L-54EoUcQIkHy16_HVQNzdTA3jZSw-egp7n8QQ9Y/edit#slide=id.g9003481a5e_0_375)
+  * [Slide](https://docs.google.com/presentation/d/1CL_L-54EoUcQIkHy16_HVQNzdTA3jZSw-egp7n8QQ9Y/edit#slide=id.g9003481a5e_0_375)
   * [Readme](https://github.com/kenttw/kent-ai-learning-notebook/blob/da43afa69e448f2a6279134cd3abb5c77f4c7818/Data_Processing_with_Shell/README.md)
