@@ -1,2 +1,4 @@
 tensorflow
 pandas
+networkx
+colorhash
