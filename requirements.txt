@@ -3,3 +3,5 @@ pandas
 networkx
 colorhash
 mxnet
+numpy
+jupyter
