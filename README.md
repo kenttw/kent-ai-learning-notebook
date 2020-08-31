@@ -1,7 +1,7 @@
 # Kent's Machine Learning and Data Processing Learning Notebook 
 
 有於資料處理、基礎統計及機器學習相關的程式練習
-當作自已個人的學習本記本，當中如有錯誤歡迎糾正。
+當作自已個人的學習本記本，當中如有錯誤歡迎來信糾正指錯。
 
 * Jupyter Notebook 一些最佳化設定
   * [matplot 中文](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Matplot_Chinese.ipynb)
