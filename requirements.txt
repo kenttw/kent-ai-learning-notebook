@@ -2,3 +2,4 @@ tensorflow
 pandas
 networkx
 colorhash
+mxnet
