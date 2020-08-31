@@ -1,7 +1,7 @@
 # Kent's Machine Learning and Data Processing Learning Notebook 
 
-這些是我在第一屆台灣人工智慧學校上課過程中所學到，並將比較重要的部份摘錄在以下的 Notebook 之中供大家參考，及當作自已的學習筆記
-（備註:除了人工智慧學校所學之外，後來自行追加了不同學習教材來源）
+有於資料處理、基礎統計及機器學習相關的程式練習
+當作自已個人的學習本記本，當中如有錯誤歡迎糾正。
 
 * Jupyter Notebook 一些最佳化設定
   * [matplot 中文](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Matplot_Chinese.ipynb)
