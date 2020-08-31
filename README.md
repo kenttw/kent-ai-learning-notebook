@@ -43,5 +43,5 @@
   
 
 * Use Spark to Process Large Scale Data
- * [Slide](https://docs.google.com/presentation/d/1hFpHcIANEyb2RtdyJboxVtPoyfHj_9wUWXby9dYZf9I/edit)
- * [GitHub](https://github.com/kenttw/spark_tutorial)
+  * [Slide](https://docs.google.com/presentation/d/1hFpHcIANEyb2RtdyJboxVtPoyfHj_9wUWXby9dYZf9I/edit)
+  * [GitHub](https://github.com/kenttw/spark_tutorial)
