@@ -1,0 +1,5 @@
+{
+  "GDB_URL": "bolt://35.221.181.65:7687",
+  "GDB_NAME": "neo4j",
+  "GDB_PASS": "esuntw"
+}
