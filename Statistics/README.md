@@ -9,3 +9,6 @@
 * [[統計學] 第七講、Sampling Distribution and Estimation](https://www.youtube.com/watch?v=GK4LW8Ofbkg&t=3413s)
 * [[統計學] 第八講、Hypothesis Testing (1)](https://www.youtube.com/watch?v=0stNHOuQaB8&t=177s)
 * [[統計學] 第九講、Hypothesis Testing (2)](https://www.youtube.com/watch?v=Oa937O5Qlc8&feature=emb_logo)
+
+# Notebook List
+* [相關系數](./Correlation_Coefficient_and_Covariance.ipynb)
