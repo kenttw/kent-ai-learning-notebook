@@ -5,3 +5,4 @@ colorhash
 mxnet
 numpy
 jupyter
+seaborn
