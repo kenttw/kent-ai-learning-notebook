@@ -26,7 +26,7 @@
   * [Clustering_GaussianMixture](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/Clustering_GaussianMixture.ipynb)
   * [PCA](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/PCAandAutoencoders.ipynb)
   * [Woe](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Woe.ipynb)
-  
+  * [Sample](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/samp.ipynb)
  * [Deep Learning](https://github.com/kenttw/deeplearning_homework)
  
  * Machine Learning Kaggle and Tutorial Project
