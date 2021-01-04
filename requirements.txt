@@ -6,3 +6,4 @@ mxnet
 numpy
 jupyter
 seaborn
+imbalanced-learn
