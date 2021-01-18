@@ -76,6 +76,15 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1):
 		g_loss, _, _ = gan_model.train_on_batch(X_realA, [y_real, X_realB])
 		# summarize performance
 		print('>%d, d1[%.3f] d2[%.3f] g[%.3f]' % (i+1, d_loss1, d_loss2, g_loss))
+
+
+		if i % 100 ==0 :
+			print("Save Model...!!!")
+			d_model.save("d_model")
+			g_model.save("g_model")
+			gan_model.save("gan_model")
+
+
 		# summarize model performance
 		if (i+1) % (bat_per_epo * 10) == 0:
 			summarize_performance(i, g_model, dataset)
@@ -123,6 +132,8 @@ if __name__ == "__main__":
 	print(g_model.summary())
 
 	gan_model = define_gan(g_model, d_model, image_shape)
+
+
 
 	dataset = load_real_samples('maps_256.npz')
 
