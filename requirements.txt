@@ -7,3 +7,4 @@ numpy
 jupyter
 seaborn
 imbalanced-learn
+keras
