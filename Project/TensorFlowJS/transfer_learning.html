@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227"/>
+    <!-- Load index.js after the content of the page -->
+
+
+    <video autoplay playsinline muted id="webcam" width="400" height="300"></video>
+
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+    <script src="index.js"></script>
+
+  </body>
+</html>
