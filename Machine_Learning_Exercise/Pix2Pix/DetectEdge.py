@@ -19,7 +19,7 @@ def showimg(img):
     pyplot.imshow(img,cmap='gray')
     pyplot.show()
 
-def getImgList(path="/Users/kent/git/kent-ai-learning-notebook/Machine_Learning_Exercise/Pix2Pix/pet_dataset/images/"):
+def getImgList(path="./pet_dataset/images/"):
     import os
     files_path = [path + x for x in os.listdir(path)]
     return files_path
@@ -61,5 +61,5 @@ def getEdge(filename = "./pet_dataset/images/Abyssinian_2.jpg"):
 
 if __name__=='__main__':
 
-    for p in getImgList("/home/kent/git/kent-ai-learning-notebook/Machine_Learning_Exercise/Pix2Pix/pet_dataset/images/"):
+    for p in getImgList("./pet_dataset/images/"):
         getEdge(p)
