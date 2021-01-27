@@ -1,6 +1,7 @@
 from discriminator import *
 from encoder2decoder import *
 from readimg import *
+from tqdm import tqdm
 
 # define the combined generator and discriminator model, for updating the generator
 def define_gan(g_model, d_model, image_shape):
@@ -64,7 +65,7 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1):
 	# calculate the number of training iterations
 	n_steps = bat_per_epo * n_epochs
 	# manually enumerate epochs
-	for i in range(n_steps):
+	for i in tqdm(range(n_steps)):
 		# select a batch of real samples
 		[X_realA, X_realB], y_real = generate_real_samples(dataset, n_batch, n_patch_1, n_patch_2)
 		# generate a batch of fake samples
@@ -123,20 +124,30 @@ def summarize_performance(step, g_model, dataset, n_samples=3):
 	g_model.save(filename2)
 	print('>Saved: %s and %s' % (filename1, filename2))
 
+from tensorflow import keras
+
+
+
+
 if __name__ == "__main__":
-	image_shape=(256, 512, 3)
-	d_model = define_discriminator(image_shape)
-	print(d_model.summary())
+	if True:
+		d_model = keras.models.load_model('./d_model/')    
+		g_model = keras.models.load_model('./g_model/')  
+		gan_model = keras.models.load_model('./gan_model/')  
+	else:
+		image_shape=(256, 512, 3)
+		d_model = define_discriminator(image_shape)
+		print(d_model.summary())
 
 
-	g_model = define_generator(image_shape)
-	print(g_model.summary())
+		g_model = define_generator(image_shape)
+		print(g_model.summary())
 
-	gan_model = define_gan(g_model, d_model, image_shape)
+		gan_model = define_gan(g_model, d_model, image_shape)
 
 
 
-	dataset = load_real_samples('pet_256_100.npz')
+	dataset = load_real_samples('pet_256_2000.npz')
 
 	# train model
 	train(d_model, g_model, gan_model, dataset)

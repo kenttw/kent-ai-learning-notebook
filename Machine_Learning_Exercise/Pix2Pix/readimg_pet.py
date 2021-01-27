@@ -12,7 +12,7 @@ from tqdm import tqdm
 def load_images(src_path,tar_path, size=(256, 512)):
     src_list, tar_list = list(), list()
     # enumerate filenames in directory, assume all are images
-    for filename in tqdm(listdir(src_path)[:100]):
+    for filename in tqdm(listdir(src_path)[:2000]):
 
         src_file = src_path + filename
         tar_file = tar_path + filename
@@ -30,12 +30,13 @@ def load_images(src_path,tar_path, size=(256, 512)):
 
 
 if __name__ == '__main__':
-    path = "/Users/kent/git/kent-ai-learning-notebook/Machine_Learning_Exercise/Pix2Pix/pet_dataset/"
-
+    path = "/home/kent/git/kent-ai-learning-notebook/Machine_Learning_Exercise/Pix2Pix/pet_dataset/"    
     src_path = path + "edge_images/"
     tar_path = path + "images/"
+    print(src_path)
+    print(tar_path)
     [src_images, tar_images] = load_images(src_path,tar_path)
-    filename = 'pet_256_100.npz'
+    filename = 'pet_256_2000.npz'
     savez_compressed(filename, src_images, tar_images)
     print('Saved dataset: ', filename)
 
