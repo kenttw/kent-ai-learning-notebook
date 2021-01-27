@@ -57,6 +57,6 @@ def define_discriminator(image_shape):
 
 
 if __name__ == "__main__":
-    model = define_discriminator([512,512,3])
+    model = define_discriminator([256,512,3])
     print(model.summary())
 

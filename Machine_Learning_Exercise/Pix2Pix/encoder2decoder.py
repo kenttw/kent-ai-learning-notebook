@@ -50,7 +50,7 @@ def decoder_block(layer_in, skip_in, n_filters, dropout=True):
 
 
 # define the standalone generator model
-def define_generator(image_shape=(256, 256, 3)):
+def define_generator(image_shape=(256, 512, 3)):
     # weight initialization
     init = RandomNormal(stddev=0.02)
     # image input
