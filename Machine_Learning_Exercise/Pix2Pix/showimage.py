@@ -2,7 +2,7 @@
 from numpy import load
 from matplotlib import pyplot
 # load the dataset
-data = load('maps_256.npz')
+data = load('pet_256_2000.npz')
 src_images, tar_images = data['arr_0'], data['arr_1']
 print('Loaded: ', src_images.shape, tar_images.shape)
 # plot source images
