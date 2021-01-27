@@ -4,4 +4,4 @@
 
 # Converter Tool
 * [Tool](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter)
-* [sample code](/)
+* [Read Image sample code](./)
