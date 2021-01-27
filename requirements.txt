@@ -8,3 +8,11 @@ jupyter
 seaborn
 imbalanced-learn
 keras
+opencv-python
+Pillow
+google_images_download
+selenium
+scikit-image
+PyQt5
+pytest
+tqdm
