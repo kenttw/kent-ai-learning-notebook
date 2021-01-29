@@ -22,6 +22,7 @@
   
   
 * Machine Learning
+  * [Enropy](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Entropy.ipynb) 
   * [Cosine Similarity vs Euclidean Distance](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/CosineSimVsEuclidean.ipynb)
   * [Clustering_GaussianMixture](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/Clustering_GaussianMixture.ipynb)
   * [PCA](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/PCAandAutoencoders.ipynb)
