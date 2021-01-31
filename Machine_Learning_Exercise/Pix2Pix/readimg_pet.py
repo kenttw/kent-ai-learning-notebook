@@ -30,13 +30,13 @@ def load_images(src_path,tar_path, size=(256, 512)):
 
 
 if __name__ == '__main__':
-    path = "/home/kent/git/kent-ai-learning-notebook/Machine_Learning_Exercise/Pix2Pix/pet_dataset/"    
+    path = "./cat_dataset/"
     src_path = path + "edge_images/"
     tar_path = path + "images/"
     print(src_path)
     print(tar_path)
     [src_images, tar_images] = load_images(src_path,tar_path)
-    filename = 'pet_256_2000.npz'
+    filename = 'cat_256_2000.npz'
     savez_compressed(filename, src_images, tar_images)
     print('Saved dataset: ', filename)
 
