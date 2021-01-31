@@ -19,8 +19,9 @@ def showimg(img):
     pyplot.imshow(img,cmap='gray')
     pyplot.show()
 
-def getImgList(path="./pet_dataset/images/"):
+def getImgList(path="./pet_dataset"):
     import os
+    path = path + "/images/"
     files_path = [path + x for x in os.listdir(path)]
     return files_path
 
@@ -30,8 +31,11 @@ def getEdge(filename = "./pet_dataset/images/Abyssinian_2.jpg"):
 
     try:
         fname = filename.split("/")[-1]
+        folder = ""
+        for s in filename.split("/")[:2]:
+            folder += s + "/"
 
-        to_file = "./pet_dataset/edge_images/"+fname
+        to_file = folder+ "edge_images/" +fname
         if os.path.exists(to_file) :
             return
 
@@ -61,5 +65,5 @@ def getEdge(filename = "./pet_dataset/images/Abyssinian_2.jpg"):
 
 if __name__=='__main__':
 
-    for p in getImgList("./pet_dataset/images/"):
+    for p in getImgList("./cat_dataset/"):
         getEdge(p)
