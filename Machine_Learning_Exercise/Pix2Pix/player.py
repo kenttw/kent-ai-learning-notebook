@@ -64,7 +64,7 @@ def named_logs(model, logs):
 
 
 # train pix2pix models
-def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1):
+def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1,start=0):
 	# determine the output square shape of the discriminator
 	n_patch_1 = d_model.output_shape[1]
 	n_patch_2 = d_model.output_shape[2]
@@ -76,6 +76,7 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1):
 	n_steps = bat_per_epo * n_epochs
 	# manually enumerate epochs
 	for i in tqdm(range(n_steps)):
+		i = i + number
 		# select a batch of real samples
 		[X_realA, X_realB], y_real = generate_real_samples(dataset, n_batch, n_patch_1, n_patch_2)
 		# generate a batch of fake samples
@@ -164,4 +165,4 @@ if __name__ == "__main__":
 	dataset = load_real_samples('cat_256_2000.npz')
 
 	# train model
-	train(d_model, g_model, gan_model, dataset,n_batch=2)
+	train(d_model, g_model, gan_model, dataset,n_batch=2,start=number)
