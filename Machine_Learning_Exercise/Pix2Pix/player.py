@@ -99,10 +99,10 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1):
 
 		# summarize model performance
 		if (i) % (bat_per_epo * .5) == 0:
-			summarize_performance(i, g_model, dataset, d_model, gan_model)
+			summarize_performance(i, g_model, d_model, gan_model, dataset, )
 
 # generate samples and save as a plot and save the model
-def summarize_performance(step, g_model, dataset, n_samples=3, d_model, gan_model):
+def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=3, ):
 	# select a sample of input images
 	[X_realA, X_realB], _ = generate_real_samples(dataset, n_samples, 1,1)
 	# generate a batch of fake samples
