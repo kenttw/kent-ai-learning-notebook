@@ -155,7 +155,7 @@ if __name__ == "__main__":
 	print(g_model.summary())
 
 	gan_model = define_gan(g_model, d_model, image_shape)
-k
+
 
 	# load real sample and do normalize
 	dataset = load_real_samples('cat_256_2000.npz')
