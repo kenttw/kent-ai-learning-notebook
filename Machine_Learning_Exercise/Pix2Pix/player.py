@@ -144,17 +144,20 @@ from tensorflow import keras
 if __name__ == "__main__":
 
 	LOAD_MODEL = True
+	number = 1#12001
+
 	image_shape=(256, 512, 3)
 	d_model = define_discriminator(image_shape)
-
-
+	if LOAD_MODEL : d_model.load_weights("d_model_%06d.h5" % (number))
 	print(d_model.summary())
 
 
 	g_model = define_generator(image_shape)
+	if LOAD_MODEL : g_model.load_weights("g_model_%06d.h5" % (number))
 	print(g_model.summary())
 
 	gan_model = define_gan(g_model, d_model, image_shape)
+	if LOAD_MODEL : gan_model.load_weights("gan_model_%06d.h5" % (number))
 
 
 	# load real sample and do normalize
