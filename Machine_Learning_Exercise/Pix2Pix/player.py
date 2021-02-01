@@ -134,7 +134,7 @@ def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=
 	g_model.save('g_model_%06d.h5' % (step+1))
 	d_model.save('d_model_%06d.h5' % (step+1))
 	gan_model.save('gan_model_%06d.h5' % (step+1))
-	print('>Saved: %s and %s' % (filename1, filename2))
+	print('g_model_%06d.h5' % (step+1), 'd_model_%06d.h5' % (step+1), 'gan_model_%06d.h5' % (step+1))
 
 from tensorflow import keras
 
