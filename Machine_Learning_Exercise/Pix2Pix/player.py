@@ -108,8 +108,8 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1,start=0)
 
 # generate samples and save as a plot and save the model
 def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=3, ):
-	# select a sample of input images
-	[X_realA, X_realB], _ = generate_real_samples(dataset, n_samples, 1,1)
+	# select a sample of input images (fixed sample data for view the progress of model improvement)
+	[X_realA, X_realB], _ = generate_real_samples(dataset, n_samples, 1,1,False)
 	# generate a batch of fake samples
 	X_fakeB, _ = generate_fake_samples(g_model, X_realA, 1,1)
 	# scale all pixels from [-1,1] to [0,1]
