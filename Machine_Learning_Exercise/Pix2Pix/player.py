@@ -35,11 +35,15 @@ def load_real_samples(filename):
 	return [X1, X2]
 
 # select a batch of random samples, returns images and target
-def generate_real_samples(dataset, n_samples, patch_shape_1, patch_shape_2):
+def generate_real_samples(dataset, n_samples, patch_shape_1, patch_shape_2,isRandom=True):
 	# unpack dataset
 	trainA, trainB = dataset
 	# choose random instances
-	ix = randint(0, trainA.shape[0], n_samples)
+	if isRandom:
+		ix = randint(0, trainA.shape[0], n_samples)
+	else:
+		ix = [1924,662,111,222,333,444]
+		ix = ix[:n_samples]
 	# retrieve selected images
 	X1, X2 = trainA[ix], trainB[ix]
 	# generate 'real' class labels (1)
@@ -145,7 +149,7 @@ from tensorflow import keras
 if __name__ == "__main__":
 
 	LOAD_MODEL = True
-	number = 12001
+	number = 1#12001
 
 	image_shape=(256, 512, 3)
 	d_model = define_discriminator(image_shape)
