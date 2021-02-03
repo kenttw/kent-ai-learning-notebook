@@ -149,7 +149,7 @@ from tensorflow import keras
 if __name__ == "__main__":
 
 	LOAD_MODEL = True
-	number = 37001
+	number = 63001
 
 	image_shape=(256, 512, 3)
 	d_model = define_discriminator(image_shape)
