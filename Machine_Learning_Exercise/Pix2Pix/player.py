@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
 	if len(sys.argv) > 2:
 		number = int(sys.argvp[1])
-	else
+	else:
 		number = 63001
 
 	image_shape=(256, 512, 3)
