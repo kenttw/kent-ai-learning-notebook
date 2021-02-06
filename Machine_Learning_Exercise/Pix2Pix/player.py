@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 	LOAD_MODEL = True
 
-	if len(sys.argv) > 2
+	if len(sys.argv) > 2:
 		number = int(sys.argvp[1])
 	else
 		number = 63001
