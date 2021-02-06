@@ -143,13 +143,16 @@ def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=
 
 from tensorflow import keras
 
-
-
+import sys
 
 if __name__ == "__main__":
 
 	LOAD_MODEL = True
-	number = 63001
+
+	if len(sys.argv) > 2
+		number = int(sys.argvp[1])
+	else
+		number = 63001
 
 	image_shape=(256, 512, 3)
 	d_model = define_discriminator(image_shape)
