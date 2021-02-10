@@ -131,20 +131,18 @@ def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=
 		pyplot.subplot(3, n_samples, 1 + n_samples*2 + i)
 		pyplot.axis('off')
 		pyplot.imshow(X_realB[i])
+
 	# save plot to file
 	filename1 = 'plot_%06d.png' % (step+1)
 	pyplot.savefig(filename1)
 	pyplot.close()
 	# save the generator model
 	# g_model.save('g_model_%06d.h5' % (step+1))
-    save2GD(save('g_model_%06d.h5' % (step+1)))
-
+	save2GD('g_model_%06d.h5' % (step+1))
 	# d_model.save('d_model_%06d.h5' % (step+1))
-    save2GD(save('d_model_%06d.h5' % (step+1)))
-
+	save2GD('d_model_%06d.h5' % (step+1))
 	# gan_model.save('gan_model_%06d.h5' % (step+1))
-    save2GD(save('gan_model_%06d.h5' % (step+1)))
-
+	save2GD('gan_model_%06d.h5' % (step+1))
 	print('g_model_%06d.h5' % (step+1), 'd_model_%06d.h5' % (step+1), 'gan_model_%06d.h5' % (step+1))
 
 def save2GD(fn):
