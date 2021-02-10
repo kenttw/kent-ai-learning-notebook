@@ -103,7 +103,7 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1,start=0)
 		# 	break
 
 		# summarize model performance
-		if (i) % (bat_per_epo * .5) == 0:
+		if (i) % (bat_per_epo * 1) == 0:
 			summarize_performance(i, g_model, d_model, gan_model, dataset, )
 
 # generate samples and save as a plot and save the model
@@ -136,10 +136,36 @@ def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=
 	pyplot.savefig(filename1)
 	pyplot.close()
 	# save the generator model
-	g_model.save('g_model_%06d.h5' % (step+1))
-	d_model.save('d_model_%06d.h5' % (step+1))
-	gan_model.save('gan_model_%06d.h5' % (step+1))
+	# g_model.save('g_model_%06d.h5' % (step+1))
+    save2GD(save('g_model_%06d.h5' % (step+1)))
+
+	# d_model.save('d_model_%06d.h5' % (step+1))
+    save2GD(save('d_model_%06d.h5' % (step+1)))
+
+	# gan_model.save('gan_model_%06d.h5' % (step+1))
+    save2GD(save('gan_model_%06d.h5' % (step+1)))
+
 	print('g_model_%06d.h5' % (step+1), 'd_model_%06d.h5' % (step+1), 'gan_model_%06d.h5' % (step+1))
+
+def save2GD(fn):
+    # Import PyDrive and associated libraries.
+    # This only needs to be done once in a notebook.
+    from pydrive.auth import GoogleAuth
+    from pydrive.drive import GoogleDrive
+    from google.colab import auth
+    from oauth2client.client import GoogleCredentials
+
+    # Authenticate and create the PyDrive client.
+    # This only needs to be done once in a notebook.
+    auth.authenticate_user()
+    gauth = GoogleAuth()
+    gauth.credentials = GoogleCredentials.get_application_default()
+    drive = GoogleDrive(gauth)
+    # fn = 'd_model_164501.h5'
+    uploaded = drive.CreateFile({'title': 'colab/Pix2Pix/'+fn})
+    uploaded.SetContentFile(fn)
+    uploaded.Upload()
+
 
 from tensorflow import keras
 
