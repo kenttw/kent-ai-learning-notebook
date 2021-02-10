@@ -80,7 +80,7 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1,start=0)
 	n_steps = bat_per_epo * n_epochs
 	# manually enumerate epochs
 	for i in tqdm(range(n_steps)):
-		i = i + number
+		i = i + start
 		# select a batch of real samples
 		[X_realA, X_realB], y_real = generate_real_samples(dataset, n_batch, n_patch_1, n_patch_2)
 		# generate a batch of fake samples
