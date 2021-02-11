@@ -5,6 +5,9 @@ from tqdm import tqdm
 import keras
 from matplotlib import pyplot
 
+
+DATASET_NAME = ""
+
 # define the combined generator and discriminator model, for updating the generator
 def define_gan(g_model, d_model, image_shape):
 	# make weights in the discriminator not trainable
@@ -136,13 +139,17 @@ def summarize_performance(step, g_model, d_model, gan_model, dataset, n_samples=
 	# save plot to file
 	filename1 = 'plot_%06d.png' % (step+1)
 	pyplot.savefig(filename1)
+
+	filename1 = '/gdrive/MyDrive/colab/Pix2Pix/%s/plot_%06d.png' % (DATASET_NAME, (step+1))
+	pyplot.savefig(filename1)
+
 	pyplot.close()
 	# save the generator model
-	g_model.save('/gdrive/MyDrive/colab/Pix2Pix/g_model_%06d.h5' % (step+1))
+	g_model.save('/gdrive/MyDrive/colab/Pix2Pix/%s/g_model_%06d.h5' % (DATASET_NAME, (step+1)))
 	# save2GD('g_model_%06d.h5' % (step+1))
-	d_model.save('/gdrive/MyDrive/colab/Pix2Pix/d_model_%06d.h5' % (step+1))
+	d_model.save('/gdrive/MyDrive/colab/Pix2Pix/%s/d_model_%06d.h5' % (DATASET_NAME, (step+1)))
 	# save2GD('d_model_%06d.h5' % (step+1))
-	gan_model.save('/gdrive/MyDrive/colab/Pix2Pix/gan_model_%06d.h5' % (step+1))
+	gan_model.save('/gdrive/MyDrive/colab/Pix2Pix/%s/gan_model_%06d.h5' % (DATASET_NAME, (step+1)))
 	# save2GD('gan_model_%06d.h5' % (step+1))
 	print('g_model_%06d.h5' % (step+1), 'd_model_%06d.h5' % (step+1), 'gan_model_%06d.h5' % (step+1))
 
