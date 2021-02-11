@@ -3,6 +3,7 @@
 * [一些參考資料](https://github.com/zaidalyafeai/zaidalyafeai.github.io/tree/master/pix2pix)
 * [PET Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz)
 # 實作部份
+* [產出 Edge Image](./DetectEdge.py)
 * [read img](./readimg.py)
 * [show img](./showimage.py)
 * [generator encoer2decoder](./encoder2decoder.py)
