@@ -97,17 +97,11 @@ def train(d_model, g_model, gan_model, dataset, n_epochs=100, n_batch=1,start=0)
 		# update the generator
 		g_loss, _, _ = gan_model.train_on_batch(X_realA, [y_real, X_realB])
 		# summarize performance
-		print('>%d, d1[%.3f] d2[%.3f] g[%.3f]' % (i+1, d_loss1, d_loss2, g_loss))
 
-		# if i % 100 ==0 and i!=0:
-		# 	print("Save Model...!!!")
-		# 	d_model.save("d_model")
-		# 	g_model.save("g_model")
-		# 	gan_model.save("gan_model")
-		# 	break
-
+		if i % 100 ==0 :
+		    print('>%d, d1[%.3f] d2[%.3f] g[%.3f]' % (i+1, d_loss1, d_loss2, g_loss))
 		# summarize model performance
-		if (i) % (bat_per_epo * 1) == 0:
+		if (i) % (bat_per_epo * 10) == 0:
 			summarize_performance(i, g_model, d_model, gan_model, dataset, )
 
 # generate samples and save as a plot and save the model
