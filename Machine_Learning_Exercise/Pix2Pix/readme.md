@@ -8,3 +8,4 @@
 * [generator encoer2decoder](./encoder2decoder.py)
 * [discriminator](./discriminator.py)
 * [main program](./player.py)
+* [在 Colab 上面跑](./player.ipynb) 
