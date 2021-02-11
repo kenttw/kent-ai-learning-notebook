@@ -3,6 +3,7 @@ from encoder2decoder import *
 from readimg import *
 from tqdm import tqdm
 import keras
+from matplotlib import pyplot
 
 # define the combined generator and discriminator model, for updating the generator
 def define_gan(g_model, d_model, image_shape):
@@ -163,6 +164,14 @@ def save2GD(fn):
     uploaded = drive.CreateFile({'title': 'colab/Pix2Pix/'+fn})
     uploaded.SetContentFile(fn)
     uploaded.Upload()
+
+def generateImage(imgs,wpath):
+	g_model = define_generator(imgs[0].shape)
+	g_model.load_weights(wpath)
+	result = g_model.predict(imgs)
+
+	return result
+
 
 
 from tensorflow import keras
