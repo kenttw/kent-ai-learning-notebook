@@ -8,7 +8,7 @@ If you find something error , please info me to correct it.
 
 * Jupyter Notebook Setting Optimization 一些最佳化設定
   * [matplot 中文](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Matplot_Chinese.ipynb)
-  * [畫圖高解析度設定](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/JupyterNotebookConfig.ipynb)
+  * [High Resolution Seeting 畫圖高解析度設定](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/JupyterNotebookConfig.ipynb)
 
 * Statistic 統計
 A few simple statistic concept and sample code 一些簡單統計的概念和範例程式碼
