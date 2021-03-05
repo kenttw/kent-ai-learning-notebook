@@ -1,14 +1,17 @@
 # Kent's Machine Learning and Data Processing Learning Notebook 
 
+About data processing、statistic 、Machine Learning and related programing tutorial.
+I write down those sample code and ipynb as personal notebook .
+If you find something error , please info me to correct it.
 有於資料處理、基礎統計及機器學習相關的程式練習
 當作自已個人的學習本記本，當中如有錯誤歡迎來信糾正指錯。
 
-* Jupyter Notebook 一些最佳化設定
+* Jupyter Notebook Setting Optimization 一些最佳化設定
   * [matplot 中文](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Matplot_Chinese.ipynb)
   * [畫圖高解析度設定](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/JupyterNotebookConfig.ipynb)
 
-* 統計
-一些簡單統計的概念和範例程式碼
+* Statistic 統計
+A few simple statistic concept and sample code 一些簡單統計的概念和範例程式碼
   * [一些基礎的計量](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Basic.ipynb)
   * [Pandas 基礎](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Pandas_Basic.ipynb)
   * [T-test](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/t-test.ipynb)
