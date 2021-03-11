@@ -15,3 +15,4 @@ selenium
 scikit-image
 pytest
 tqdm
+pandas-profiling
