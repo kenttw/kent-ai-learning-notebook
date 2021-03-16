@@ -16,3 +16,5 @@ scikit-image
 pytest
 tqdm
 pandas-profiling
+googlemaps
+fuzzywuzzy
