@@ -27,6 +27,7 @@ A few simple statistic concept and sample code 一些簡單統計的概念和範
 * Machine Learning
   * [Performance Metrics](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Metric.ipynb)
   * [LinearRegression](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/LInearRegresion.ipynb) 
+  * [Gradient Boosting](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Ada_Boosting_and_Gradient_Boosting.ipynb)
   * [Enropy](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Entropy.ipynb) 
   * [Cosine Similarity vs Euclidean Distance](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/CosineSimVsEuclidean.ipynb)
   * [Clustering_GaussianMixture](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Machine_Learning_Basic/Clustering_GaussianMixture.ipynb)
