@@ -22,7 +22,7 @@ A few simple statistic concept and sample code 一些簡單統計的概念和範
   * [Box Chart](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/BoxPlot.ipynb)
   * [QQPlot](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/QQPlot.ipynb)
   * [Heat Map](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/HeatMap.ipynb)
-  
+  * [Calibration and Fitting Curve](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Statistics/FittingCurve_and_Calibration.ipynb)
   
 * Machine Learning
   * [Performance Metrics](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Machine_Learning_Basic/Metric.ipynb)
