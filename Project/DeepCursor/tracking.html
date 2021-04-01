@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<style>
+/*div {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+}*/
+</style>
+</head>
+<body>
+
+<div style="width: 800px;
+  height: 300px;
+  border: 1px solid black;" >
+
+<select onselect="ss(event)" onchange="ss(event)">
+    <option>Please Choose One</option>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+    <option>D</option>
+    <option>E</option>
+    <option>F</option>
+</select>
+<br>
+<br>
+<div style="border: 1px solid black;height: 200px"  onmousemove="myFunction(event)" onmouseout="clearCoor()">
+</div>
+
+<button onclick="ee(event)">OK</button>
+
+
+</div>
+
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+
+<p>When the mouse is moved over the div, the p element will display the horizontal and vertical coordinates of your mouse pointer, whose values are returned from the clientX and clientY properties on the
+MouseEvent object.</p>
+
+
+<textarea style="margin: 0px; height: 154px; width: 793px;"  id="demo"></textarea>
+<script>
+
+var tt = [];
+var xx = [];
+var yy = [];
+var istart = false;
+
+function ss(event) {
+  alert('start');
+  istart = true;
+
+}
+
+function ee(event) {
+  alert('end');
+  istart = false
+
+
+  var a = {"xx":xx,"yy":yy,"tt":tt};
+
+  var myJSON = JSON.stringify(a);
+
+  document.getElementById("demo").value = myJSON;
+
+
+
+
+}
+
+
+function showCoords(event) {
+
+
+
+  var cX = event.clientX;
+  var sX = event.screenX;
+  var cY = event.clientY;
+  var sY = event.screenY;
+  var coords1 = "client - X: " + cX + ", Y coords: " + cY;
+  var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+  document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
+}
+
+
+
+
+function myFunction(event) {
+
+  if (istart == false)
+  {
+    return 1 ;
+
+  }
+  var cX = event.clientX;
+  var sX = event.screenX;
+  var cY = event.clientY;
+  var sY = event.screenY;
+  var coords1 = "client - X: " + cX + ", Y coords: " + cY;
+  var coords2 = "screen - X: " + sX + ", Y coords: " + sY;
+  var d = new Date();
+  var n =  d.valueOf(); //d.getMilliseconds();
+
+  var coor = "Coordinates: (" + coords1 + "," + coords2 + ") ->> " + n +" !!";
+
+  tt.push(n);
+  xx.push(cX);
+  yy.push(cY);
+  document.getElementById("demo").innerHTML = coords1 + "<br>" + coords2;
+
+
+}
+
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
