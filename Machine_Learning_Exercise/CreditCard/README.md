@@ -1,3 +1,2 @@
 Please refer this [Document](https://docs.google.com/presentation/d/11sZfL-aHRqq6nHuOnrz492oGb7NIyxMR61Dc3FJPYr4/edit#slide=id.p)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSDLqcTZH5X7BJPnC_VDjc-J9M_XyTYh5aHnV91yXT22zum0YRbKTGKHz0fO4ECu815ereAJkjSOkib/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
