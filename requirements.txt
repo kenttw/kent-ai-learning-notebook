@@ -18,3 +18,4 @@ tqdm
 pandas-profiling
 googlemaps
 fuzzywuzzy
+mlxtend
