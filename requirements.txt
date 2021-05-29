@@ -19,3 +19,5 @@ pandas-profiling
 googlemaps
 fuzzywuzzy
 mlxtend
+lightgbm
+evidently
