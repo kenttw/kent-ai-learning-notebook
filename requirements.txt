@@ -21,3 +21,4 @@ fuzzywuzzy
 mlxtend
 lightgbm
 evidently
+mlflow

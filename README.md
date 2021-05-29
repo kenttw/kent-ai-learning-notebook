@@ -15,6 +15,7 @@ A few simple statistic concept and sample code 一些簡單統計的概念和範
   * [一些基礎的計量](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Basic.ipynb)
   * [Pandas 基礎](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Pandas_Basic.ipynb)
   * [T-test](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/t-test.ipynb)
+  * [KS Test](https://github.com/kenttw/kent-ai-learning-notebook/blob/master/Statistics/t_test_and_ks_test.ipynb)
   * [HypothesisTesting](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/HypothesisTesting.ipynb)
   * [Kernel Density Estimation](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/Kernel_Density_Estimation.ipynb)
   * [Moving Average](https://github.com/kenttw/aiacademy-learning-notebook/blob/master/Statistics/moving_average.ipynb)
