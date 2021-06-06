@@ -22,3 +22,5 @@ mlxtend
 lightgbm
 evidently
 mlflow
+apache-flink
+scikit-plot
