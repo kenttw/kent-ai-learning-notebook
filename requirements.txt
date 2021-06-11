@@ -24,3 +24,4 @@ evidently
 mlflow
 apache-flink
 scikit-plot
+shapely
