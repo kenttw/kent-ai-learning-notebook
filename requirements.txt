@@ -25,3 +25,4 @@ mlflow
 apache-flink
 scikit-plot
 shapely
+xgboost
