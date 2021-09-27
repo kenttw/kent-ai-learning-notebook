@@ -19,7 +19,7 @@ def genOneHotSql(cat_cols, enc_categories, numerical_cols):
     return r.getvalue()
 
 
-def xgb2sql(xgb_booster, table_name: str, index_list=[], sql_type='flink'):
+def doProcess(xgb_booster, table_name: str, index_list=[], sql_type='flink'):
     """
     Takes in an XGB Booster and converts it to a SQL query.
     Look, I'm not saying you should use this, but I'm saying it now exists.
@@ -63,7 +63,7 @@ FROM moon_table"""
             query = f"""\nSELECT id,
     1 / ( 1 + EXP ( - (
     {column_string} ) ) ) AS score
-FROM booster_output"""
+FROM moon_table"""
 
         return query
 
@@ -182,10 +182,10 @@ FROM booster_output"""
         raise
 
     query = (
-        "CREATE VIEW moon_table AS (\n\tSELECT id,\n"
+        "CREATE VIEW moon_table AS \n\tSELECT id,\n"
         + ", \n".join((index_list + leaf_list))
         + f"\n\tFROM {table_name}"
-        + f");\n{output}"
+        + f";\n{output}"
     )
 
     return query
