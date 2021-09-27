@@ -47,7 +47,7 @@ select {},\ncast( 1/(1+EXP(-1*score)) as double) from score_view
         """.format(all_vars)
 
 
-        return "create view score_view as \n(\n" +  pre_sql + "as score \nfrom raw_data)\n;\n" + result_sql
+        return "create view score_view as \n\n" +  pre_sql + "as score \nfrom raw_data\n;\n" + result_sql
 
     def doProcess(self,dm):
 
