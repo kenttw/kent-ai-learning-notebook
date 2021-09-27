@@ -58,7 +58,7 @@ def xgb2sql(xgb_booster, table_name: str, index_list=[], sql_type='flink'):
     {index_string},
     1 / ( 1 + EXP ( - (
     {column_string}) ) ) AS score
-FROM booster_output"""
+FROM moon_table"""
         else:
             query = f"""\nSELECT id,
     1 / ( 1 + EXP ( - (
