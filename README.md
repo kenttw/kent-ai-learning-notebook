@@ -3,7 +3,7 @@
 About data processing、statistic 、Machine Learning and related programing tutorial.
 I write down those sample code and ipynb as personal notebook .
 If you find something error , please info me to correct it.
-有於資料處理、基礎統計及機器學習相關的程式練習
+有資料處理、基礎統計及機器學習相關的程式練習
 當作自已個人的學習本記本，當中如有錯誤歡迎來信糾正指錯。
 
 * Jupyter Notebook Setting Optimization 一些最佳化設定
